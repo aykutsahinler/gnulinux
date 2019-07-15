@@ -7,13 +7,13 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Hafta 3 - Server kavramının açıklanması, SSH Kullanımı, Zamanlanmış görevler oluşturulması</title>
-    <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/site.js"></script>
+    <link href="stylesheets/site.css" rel="stylesheet" />
+    <script src="javascripts/site.js"></script>
   </head>
   <body>
     <nav class="navbar">
       <div class="homepage">
-        <a href="http://lvh.me:4567/">Herkes için GNU/Linux</a>
+        <a href="/">Herkes için GNU/Linux</a>
       </div>
       <div class="authors">
         <div class="author">
@@ -28,7 +28,7 @@
       </div>
     </nav>
     <header>
-        <a href="http://lvh.me:4567">
+        <a href="/">
           <div class="site-logo">
             <img src="logo.png" alt="pausiber-logo" height="200">
           </div>
@@ -56,7 +56,7 @@
 <p>Evet, akıllara gelen bu tablo ve tanım tamamen doğru. Fakat bir <q>server</q> oluşturmak için tüm bu saydığımız şeylere ihtiyacımız yok. Sadece bir bilgisayar, server oluşturmak için yeterli. Ve tabiki gerekli olan bir iletişim ağı.</p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-3/0.jpg" width="800">
+    <img alt="pwd" src="images/hafta-3/0.jpg" width="800">
 </p>
 
 <p>Yani server dediğimiz şeylerde aslında birer bilgisayardır.</p>
@@ -111,7 +111,7 @@
 <div class="highlight"><pre class="highlight plaintext"><code>    [~$] ssh-keygen
 </code></pre></div>
 <p align="center">
-    <img alt="ssh-keygen" src="/images/hafta-3/1.png" width="800">
+    <img alt="ssh-keygen" src="images/hafta-3/1.png" width="800">
 </p>
 
 <p>Üretilen keyler&#39;den sonunda <strong>.pub</strong> uzantısı bulunan sizin public key&#39;inizdir. Bu key&#39;i bağlanmak istediğiniz sunuculara eklemeniz gerekir. Biz bu anlatımda sunucu tarafına değinmeyecemiz için bu adımın nasıl uygulanacağını öğrenmek isteyen arkadaşların bu anlatıma bakmasını tavsiye ederiz : <a href="https://boratanrikulu.me/ssh-key-kullanimi/"><strong><code>boratanrikulu.me/ssh-key-kullanimi</code></strong></a></p>
@@ -156,7 +156,7 @@ Bunu uygulamak için önceki haftanın dokümanını inceleyin : <a href="/hafta
 Bunlar <strong>/etc/</strong> altında aşağıdaki gibi bulunur.</p>
 
 <p align="center">
-    <img src="/images/hafta-3/cron-ile-zamanlanmis-gorevler/3.png">
+    <img src="images/hafta-3/cron-ile-zamanlanmis-gorevler/3.png">
 </p>
 
 <hr>
@@ -174,7 +174,7 @@ Bunlar <strong>/etc/</strong> altında aşağıdaki gibi bulunur.</p>
 <p>/etc/crontab aşağıdaki gibidir.</p>
 
 <p align="center">
-    <img src="/images/hafta-3/cron-ile-zamanlanmis-gorevler/4.png">
+    <img src="images/hafta-3/cron-ile-zamanlanmis-gorevler/4.png">
 </p>
 
 <p>İkinicisi; kullanıcıya özel crontab dosyası oluşturulmasıdır. Biz anlatımızda ikinci yolu tercih edeceğiz.</p>
@@ -190,11 +190,11 @@ Bunlar <strong>/etc/</strong> altında aşağıdaki gibi bulunur.</p>
 <div class="highlight"><pre class="highlight plaintext"><code>    [~#] dpkg-reconfigure tzdata
 </code></pre></div>
 <p align="center">
-    <img src="/images/hafta-3/cron-ile-zamanlanmis-gorevler/1.png">
+    <img src="images/hafta-3/cron-ile-zamanlanmis-gorevler/1.png">
 </p>
 
 <p align="center">
-    <img src="/images/hafta-3/cron-ile-zamanlanmis-gorevler/2.png">
+    <img src="images/hafta-3/cron-ile-zamanlanmis-gorevler/2.png">
 </p>
 
 <hr>
@@ -235,13 +235,13 @@ Bunlar <strong>/etc/</strong> altında aşağıdaki gibi bulunur.</p>
 <div class="highlight"><pre class="highlight plaintext"><code>    [~$] EDITOR=nano crontab -e
 </code></pre></div>
 <p align="center">
-    <img src="/images/hafta-3/cron-ile-zamanlanmis-gorevler/11.png">
+    <img src="images/hafta-3/cron-ile-zamanlanmis-gorevler/11.png">
 </p>
 
 <p>Crontab dosya yapısı aşağıdaki yapıdaki gibi kullanılmalıdır. Her satıra bir işlem yazılacak şekilde düzenlenmelidir.</p>
 
 <p align="center">
-    <img src="/images/hafta-3/cron-ile-zamanlanmis-gorevler/10.png">
+    <img src="images/hafta-3/cron-ile-zamanlanmis-gorevler/10.png">
 </p>
 
 <p>Yukardaki ifade yerine direkt olarak aşağıdaki gibi bir yapı da kullanılabilir.</p>
@@ -288,7 +288,7 @@ Bunlar <strong>/etc/</strong> altında aşağıdaki gibi bulunur.</p>
 <p>Örneğin aşağıdaki iki satır da aynı işlemi yapmaktadır.</p>
 
 <p align="center">
-    <img src="/images/hafta-3/cron-ile-zamanlanmis-gorevler/12.png">
+    <img src="images/hafta-3/cron-ile-zamanlanmis-gorevler/12.png">
 </p>
 
 <hr>

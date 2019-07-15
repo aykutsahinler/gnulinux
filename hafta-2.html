@@ -7,13 +7,13 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Hafta 2 - Kullanıcı-Grup Yönetimi ve Dosya-Dizin İzinleri</title>
-    <link href="/stylesheets/site.css" rel="stylesheet" />
-    <script src="/javascripts/site.js"></script>
+    <link href="stylesheets/site.css" rel="stylesheet" />
+    <script src="javascripts/site.js"></script>
   </head>
   <body>
     <nav class="navbar">
       <div class="homepage">
-        <a href="http://lvh.me:4567/">Herkes için GNU/Linux</a>
+        <a href="/">Herkes için GNU/Linux</a>
       </div>
       <div class="authors">
         <div class="author">
@@ -28,7 +28,7 @@
       </div>
     </nav>
     <header>
-        <a href="http://lvh.me:4567">
+        <a href="/">
           <div class="site-logo">
             <img src="logo.png" alt="pausiber-logo" height="200">
           </div>
@@ -54,7 +54,7 @@
 <p>Bir hastane düşünün, bu hastanede çalışanların kullanabileceği yanlız bir tane bilgisayar var. Ve hastanemizde çalışan üç ana meslek grubu var. Bunlar; <strong>doktorlar</strong>, <strong>güvenlik görevlileri</strong> ve <strong>aşçılar</strong>.</p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/14.png" width="800">
+    <img alt="pwd" src="images/hafta-2/14.png" width="800">
 </p>
 
 <p>Bu çalışanların tek bir bilgisayarı kullanmasının iki farklı seneryosu olabilir.</p>
@@ -102,15 +102,15 @@
 <div class="highlight"><pre class="highlight plaintext"><code>    [~#] adduser kullanıcının_adı
 </code></pre></div>
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/4.png" width="800">
+    <img alt="pwd" src="images/hafta-2/4.png" width="800">
 </p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/5.png" width="800">
+    <img alt="pwd" src="images/hafta-2/5.png" width="800">
 </p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/6.png" width="800">
+    <img alt="pwd" src="images/hafta-2/6.png" width="800">
 </p>
 
 <p>Şuan sistemimize altı adet kullanıcı ekledik.</p>
@@ -127,7 +127,7 @@
 </code></p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/7.png" width="800">
+    <img alt="pwd" src="images/hafta-2/7.png" width="800">
 </p>
 
 <p>Dosya incelendiğinde <strong><code>dev:x:1000:1000:PauSiber Dev,,,:/home/dev:/usr/bin/zsh</code></strong> gibi ifadeler gözükür. Hadi şimdi bu ifadelerin ne anlama geldiğini açıklayalım.</p>
@@ -176,7 +176,7 @@
 <div class="highlight"><pre class="highlight plaintext"><code>    [~#] groupadd grubun_ismi
 </code></pre></div>
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/8.png" width="800">
+    <img alt="pwd" src="images/hafta-2/8.png" width="800">
 </p>
 
 <p>Sistemimize üç adet yeni grup ekledik. Sistemimizde bulunan gruplar <strong><code>/etc/group</code></strong> dosyasında sıralanır.</p>
@@ -187,7 +187,7 @@
 </code></p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/9.png" width="800">
+    <img alt="pwd" src="images/hafta-2/9.png" width="800">
 </p>
 
 <p>Son görselde de görüldüğü üzere bizim eklediğimiz grupların haricinde, öceden eklediğimiz kullacılar da burda gözükmekde. Örneğin <q>doktor_beyza</q> gibi bir grup sistemde çoktandır eklenmiş durumda. <strong>Peki bu nasıl oluyor?</strong></p>
@@ -206,13 +206,13 @@
 <p><strong>Not :</strong> Burada <strong><code>--add</code></strong> parametresi oldukça kritiktir. Eğer kullanılmaz ise kullanıcıyı hali hazırda bulunduğu tüm gruplardan çıkarır ve yeni gruba ekler. Fakat bizim istediğimiz bu değil, kullanıcının hali hazırda bulunduğu grupları değiştirmek istemiyoruz, yalnızca yeni bir gruba dahil etmek istiyoruz, bu durumda &ndash;add parametresi kullanmamız bir gerekliktir.</p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/10.png" width="800">
+    <img alt="pwd" src="images/hafta-2/10.png" width="800">
 </p>
 
 <p>Ekleme işlemlerimizi yaptık. Şimdi <strong><code>/etc/group</code></strong>&lsquo; u yeniden görüntüleyelim.</p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/11.png" width="800">
+    <img alt="pwd" src="images/hafta-2/11.png" width="800">
 </p>
 
 <p>Başarılı bir şekilde personelimizi gruplarına ekledik.</p>
@@ -236,7 +236,7 @@
 <p>root kullancısının da kendine ait bir odası vardır. Fakat root kullacısına ayrılmış bu alan direk root dizini altında ayrılmış /root dizinidir.</p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/17.png" width="800">
+    <img alt="pwd" src="images/hafta-2/17.png" width="800">
 </p>
 
 <hr>
@@ -249,7 +249,7 @@
 <p>Şimdi sistemizide kayıtlı olan doktor_ahmedi aşağıdaki örnekteki gibi işten çıkaralım.</p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/12.png" width="800">
+    <img alt="pwd" src="images/hafta-2/12.png" width="800">
 </p>
 
 <hr>
@@ -260,7 +260,7 @@
 <div class="highlight"><pre class="highlight plaintext"><code>    [~$] passwd
 </code></pre></div>
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/13.png" width="800">
+    <img alt="pwd" src="images/hafta-2/13.png" width="800">
 </p>
 
 <hr>
@@ -271,7 +271,7 @@
 <div class="highlight"><pre class="highlight plaintext"><code>    [~#] gpasswd --delete guvenlik_aykut guvenlikciler
 </code></pre></div>
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/18.png" width="800">
+    <img alt="pwd" src="images/hafta-2/18.png" width="800">
 </p>
 
 <p>Kullanıcı örnek amacıyla grubundan çıkarmıştık, şimdi geri dahil edelim <strong>:)</strong>.</p>
@@ -285,7 +285,7 @@
 <div class="highlight"><pre class="highlight plaintext"><code>    [~#] groupdel hemsireler
 </code></pre></div>
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/15.png" width="800">
+    <img alt="pwd" src="images/hafta-2/15.png" width="800">
 </p>
 
 <hr>
@@ -297,7 +297,7 @@
 <p>Aşağıdaki gibi dizinleri oluşturalım.</p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/19.png" width="800">
+    <img alt="pwd" src="images/hafta-2/19.png" width="800">
 </p>
 
 <p>Dizinlerimiz içersine aşağıdaki gibi gerekli dosyaları da oluşturalım.</p>
@@ -305,7 +305,7 @@
 <p>Bu dizinlerin sahiplik ve izinlerini ayarlama işlemine geçmeden önce GNU/Linux&#39;da dosya ve dizin kavramlarından bahsetmeliyiz.</p>
 
 <p align="center">
-    <img alt="pwd" src="/images/hafta-2/20.png" width="800">
+    <img alt="pwd" src="images/hafta-2/20.png" width="800">
 </p>
 
 <hr>
@@ -326,7 +326,7 @@
 <div class="highlight"><pre class="highlight plaintext"><code>    [~$] ls -l fileName
 </code></pre></div>
 <p align="center">
-    <img src="/images/hafta-2/dosya-ve-dizin-izinleri/0.png">
+    <img src="images/hafta-2/dosya-ve-dizin-izinleri/0.png">
 </p>
 
 <p>Dosya ve dizin işlemlerine bakıldığında 10 karakterden oluşan bir yapı görünür.</p>
@@ -343,7 +343,7 @@
 Bunları aşağıdaki gibi üçerli olarak gruplandırarak incelemekte fayda vardır.</p>
 
 <p align="center">
-    <img src="/images/hafta-2/dosya-ve-dizin-izinleri/1.png">
+    <img src="images/hafta-2/dosya-ve-dizin-izinleri/1.png">
 </p>
 
 <p>Yani bu örnektekinin;  </p>
@@ -381,13 +381,13 @@ Bunları aşağıdaki gibi üçerli olarak gruplandırarak incelemekte fayda var
 <p>Burada <strong>-R</strong> parametresini kullanma sebebimiz belirttiğimiz işlemi recursive olarak tüm alt(sub) dosya ve dizinlere uygulanması gerektiğini belirtmek içindir.</p>
 
 <p align="center">
-    <img src="/images/hafta-2/21.png">
+    <img src="images/hafta-2/21.png">
 </p>
 
 <p>Tüm hastane dosyalarımızın group sahipliklerini değiştirdik. Fakat dosyaların kullanıcı sahiplikleri hale belirlenmiş değil. Her dosyanın sahibi olarak meslek grubundan belirlenen bir kullanıcıyı atamak istiyoruz. Aşağıdaki gibi adımları gerçekleştirdik.</p>
 
 <p align="center">
-    <img src="/images/hafta-2/22.png">
+    <img src="images/hafta-2/22.png">
 </p>
 
 <p>Dosya sahipliklerini ayarladık.</p>
@@ -470,14 +470,14 @@ Bunları aşağıdaki gibi üçerli olarak gruplandırarak incelemekte fayda var
 <div class="highlight"><pre class="highlight plaintext"><code>    [~#] chmod g-w -R dizin/
 </code></pre></div>
 <p align="center">
-    <img src="/images/hafta-2/23.png">
+    <img src="images/hafta-2/23.png">
 </p>
 
 <p>Ayrıca <strong><code>other</code></strong>&#39;ın dosya üzerinde hiç bir yetkisinin olmasını istemiyoruz. Bunun için de aşağıdaki gibi örneğimizi uygularız. Other&#39;ın sahip olduğunu tüm yetkiyi kaldırmış oluruz.</p>
 <div class="highlight"><pre class="highlight plaintext"><code>    [~#] chmod o-rwx -R dizin/
 </code></pre></div>
 <p align="center">
-    <img src="/images/hafta-2/24.png">
+    <img src="images/hafta-2/24.png">
 </p>
 
 <p>Bu işlemi uyguladığımızda klasör&#39;ün içinde neler olduğuna bile bakamayız, çünkü şu ana kadar olan tüm işlemleri PauSiber Dev&#39;in normal kullanıcısı olan <strong><code>dev</code></strong> ile yaptık, dizinler üzerinde dev kullanıcısı other olarka gözükür. dev&#39;in hiç bir yetkisi olmadığı için dizin içlerini göremeyiz.</p>
@@ -489,7 +489,7 @@ Bunları aşağıdaki gibi üçerli olarak gruplandırarak incelemekte fayda var
 <p>Başka bir kullanıcıya geçiş yapmak için <strong><code>su</code></strong> komutu kullanabiliriz.</p>
 
 <p align="center">
-    <img src="/images/hafta-2/25.png">
+    <img src="images/hafta-2/25.png">
 </p>
 
 <hr>
@@ -521,7 +521,7 @@ Bunları aşağıdaki gibi üçerli olarak gruplandırarak incelemekte fayda var
 </tbody></table>
 
 <p align="center">
-    <img src="/images/hafta-2/dosya-ve-dizin-izinleri/1.png">
+    <img src="images/hafta-2/dosya-ve-dizin-izinleri/1.png">
 </p>
 
 <p>Bir dosyanın yetkisinin numarasal karşılığı göstermek için 3 basamaklı bir sayı kullanırız. Bu 3 basamaklı sayıyı elde etmek için yetkileri üçerli olarak gruplandırıp toplarız.</p>
@@ -530,7 +530,7 @@ Bunları aşağıdaki gibi üçerli olarak gruplandırarak incelemekte fayda var
 <div class="highlight"><pre class="highlight plaintext"><code>    [~$] stat -c %a dosyaAdi
 </code></pre></div>
 <p align="center">
-    <img src="/images/hafta-2/26.png">
+    <img src="images/hafta-2/26.png">
 </p>
 
 <p>Dosyanın izinlerini numeric method ile değiştirmek istiyorsak aşağıdaki gibi bir syntax kullanırız.</p>
@@ -539,7 +539,7 @@ Bunları aşağıdaki gibi üçerli olarak gruplandırarak incelemekte fayda var
 <p>Örneğin hastalar klasörü içersinde bulunan dosyaların, other&#39;lar tarafından okunabilir ve çalıştırılabilir olmasını istiyor olalım, aşağıdaki gibi yapabiliriz.</p>
 
 <p align="center">
-    <img src="/images/hafta-2/27.png">
+    <img src="images/hafta-2/27.png">
 </p>
 
 <p>Text method kullanacak olsaydık, aynı işlemi yapmak için <code>chmod o=rx *</code> dememiz yeterdi.</p>
