@@ -1,0 +1,97 @@
+.highlight {
+  font-weight: bold;
+  color: #586e75;
+  background: #f6f6f6;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  padding: 10px;
+  overflow: auto; }
+  .highlight table td {
+    padding: 5px; }
+  .highlight table pre {
+    margin: 0; }
+  .highlight .w {
+    color: #586e75; }
+  .highlight .err {
+    color: #151515;
+    background-color: #ac4142; }
+  .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+    color: #505050; }
+  .highlight .cp, .highlight .nt {
+    color: #f4bf75; }
+  .highlight .o, .highlight .ow, .highlight .p, .highlight .pi {
+    color: #d0d0d0; }
+  .highlight .gi {
+    color: #90a959; }
+  .highlight .gd {
+    color: #ac4142; }
+  .highlight .gh {
+    color: #6a9fb5;
+    background-color: #151515;
+    font-weight: bold; }
+  .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+    color: #aa759f; }
+  .highlight .kc, .highlight .kt, .highlight .kd {
+    color: #d28445; }
+  .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+    color: #90a959; }
+  .highlight .sr {
+    color: #75b5aa; }
+  .highlight .si, .highlight .se {
+    color: #8f5536; }
+  .highlight .nn, .highlight .nc, .highlight .no {
+    color: #f4bf75; }
+  .highlight .na {
+    color: #6a9fb5; }
+  .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx, .highlight .ss {
+    color: #90a959; }
+
+.shell,
+.plaintext {
+  border: solid;
+  font-size: 1.5em; }
+
+body {
+  background-color: #fbc547;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 1vh 1rem;
+  font-size: 1.15em;
+  text-align: center; }
+
+a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none; }
+  a:focus, a:hover {
+    color: rgba(255, 255, 255, 0.6); }
+
+.container {
+  display: flex;
+  justify-content: center; }
+
+.article {
+  width: 50vw;
+  text-align: left; }
+
+img {
+  max-width: 50vw; }
+
+.articles {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
+  .articles table {
+    text-align: left; }
+  .articles tr > td:last-child {
+    text-align: center; }
+
+.navbar {
+  display: flex;
+  justify-content: space-around; }
+
+.author {
+  display: inline-block;
+  padding-left: 10px; }
+
+.site-desc {
+  opacity: 0.7; }
